@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech Converter</title>
+    <title>AI Voice Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="aa">
-        <h1>Text to Speech <span>Converter</span></h1>
-        <textarea id="textInput" placeholder="Write anything here..."></textarea>
-        <div class="bb">
-            <select id="languageSelect"></select>
-            <button id="speakButton">
-                <img src="aaa.jpeg" class="ss" alt="Play">
-            </button>
+    <div class="container">
+        <h1 class="title">AI Voice Generator</h1>
+        <p class="subtitle">Convert text to speech in multiple languages with ease.</p>
+        <textarea id="text-input" placeholder="Type or paste your text here..."></textarea>
+        <div class="controls">
+            <select id="language-select">
+                <!-- Languages will be populated dynamically -->
+            </select>
+            <button id="generate-btn">🔊 Generate Voice</button>
+            <button id="clear-btn">❌ Clear</button>
+        </div>
+        <audio id="audio-output" controls></audio>
+        <div class="theme-toggle">
+            <span>🌙</span>
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider"></span>
+            </label>
+            <span>☀️</span>
         </div>
     </div>
-    <script src="aa.js" defer></script>
+    <script src="aa.js"></script>
 </body>
 </html>
